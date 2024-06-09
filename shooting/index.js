@@ -68,8 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle user input
     function handleInput(event) {
         // check the event type
+
         if (event.type === "mousemove") {
-            playerX = event.clientX - canvas.offsetLeft;
+            // check if the cursor is within the canvas
+            if (event.clientX > canvas.offsetLeft &&
+                event.clientX < canvas.offsetLeft + canvas.width) {
+
+                playerX = event.clientX - canvas.offsetLeft;
+            }
         }
         else if (event.type === "click") {
             bullet = { x: playerX, y: playerY, color: getRandomColor() };
