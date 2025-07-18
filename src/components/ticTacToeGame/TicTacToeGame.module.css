@@ -1,0 +1,54 @@
+.ticTacToeContainer {
+  background: linear-gradient(180deg, #f8ffae 0%, #87ceeb 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 24px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #2d3a4b;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.cell {
+  width: 60px;
+  height: 80px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: #fff;
+  border: 2px solid #43c6ac;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cell:disabled {
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.restartButton {
+  margin-top: 12px;
+  padding: 8px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #2d3a4b;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}

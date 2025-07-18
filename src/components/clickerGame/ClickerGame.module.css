@@ -1,0 +1,39 @@
+.clickerGameContainer {
+  position: relative;
+  background: linear-gradient(180deg, #f8ffae 0%, #87ceeb 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  margin: 0 auto;
+  padding: 24px 0 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #2d3a4b;
+}
+
+.ball {
+  position: absolute;
+  font-size: 2.5rem;
+  user-select: none;
+  transition: transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restartButton {
+  margin-top: 24px;
+  padding: 8px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #2d3a4b;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}

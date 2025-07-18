@@ -1,0 +1,31 @@
+.confettiContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  opacity: 0.85;
+  animation: confetti-fall 1.8s cubic-bezier(0.4, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-40px) rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(90vh) rotate(360deg);
+    opacity: 0;
+  }
+}
